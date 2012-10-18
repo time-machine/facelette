@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  facetime_id: MyString
+  facetiming: false
+  last_checked: 2012-10-19 01:35:39
+
+two:
+  facetime_id: MyString
+  facetiming: false
+  last_checked: 2012-10-19 01:35:39
