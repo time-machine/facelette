@@ -1,5 +1,6 @@
 class Session < ActiveRecord::Base
-  # attr_accessible :facetime_id, :facetiming, :last_checked
+  attr_accessible :facetime_id, :facetiming, :last_checked
+
   def self.available(session)
     @session = Session.find(:first,
         :conditions => ["id != ? AND last_checked > ?",
