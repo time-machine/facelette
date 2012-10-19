@@ -8,7 +8,26 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="header">
+  <h1><a href="/">facelette.</a></h1>
+  <p>it's like chat roulette but with more apple product and stuff.</p>
+</div>
+
+<div id="content">
+  <%= yield %>
+</div>
+
+<div id="footer">
+  <p>The dumbest experiment ever by <a
+    href="http://zachholman.com">Zach Holman</a>. Follow <a
+    href="http://twitter.com/holman">@holman</a> on Twitter.
+  </p>
+
+  <p>This thang is happily
+    powered by <a href="http://github.com">Github</a> and <a
+    href="http://heroku.com">Heroku</a>.
+  </p>
+</div>
 
 </body>
 </html>

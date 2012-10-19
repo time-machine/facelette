@@ -1,2 +1,8 @@
-<h1>Sessions#queue</h1>
-<p>Find me in app/views/sessions/queue.html.erb</p>
+<% if @session %>
+  Cool! You're ready to <a
+  href="facetime://<%= @session.facetime_id %>">start a FaceTime</a>.
+<% else %>
+  <p>
+    Waiting to FaceTime you up. We'll let you know when we have someone for you.
+  </p>
+<% end %>
