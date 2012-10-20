@@ -6,6 +6,18 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <%= yield :head %>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-251125-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </head>
 <body>
 
@@ -21,13 +33,22 @@
 <div id="footer">
   <p>The dumbest experiment ever by <a
     href="http://zachholman.com">Zach Holman</a>. Follow <a
-    href="http://twitter.com/holman">@holman</a> on Twitter.
-  </p>
+    href="http://twitter.com/holman">@holman</a> on Twitter.</p>
 
   <p>This thang is happily
-    powered by <a href="http://github.com">Github</a> and <a
-    href="http://heroku.com">Heroku</a>.
-  </p>
+    powered by <a href="http://github.com">Github</a>, <a
+    href="http://heroku.com">Heroku</a>, and <a
+    href="http://iwantmyname.com">iWantMyName</a>.</p>
+
+  <p>Privacy policy: dude, you're submitting an email or phone number to a
+    public site for strangers to call you. Let that sink in. Cool! That said,
+    this is for fun. If you stop using Facelette for more than two minutes,
+    Facelette will consider you "signed out" and won't display your FaceTime ID
+    to anyone else, ever. I'll regularly purge all inactive accounts for good
+    measure.</p>
+
+  <p>Privacy tl;dr: you're submitting your stuff publicly, so watch out. But
+    Facelette will absolutely protect your info otherwise.</p>
 </div>
 
 </body>

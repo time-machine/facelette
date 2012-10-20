@@ -1,8 +1,8 @@
 <% if @session %>
-  Cool! You're ready to <a
-  href="facetime://<%= @session.facetime_id %>">start a FaceTime</a>.
+  Cool! You're ready to chat with <a
+  href="facetime://<%= @session.facetime_id %>"><%= @session.facetime_id %></a>.
 
-  <p>This one sucked, send me <a href="/queue">on to the next one</a>.</p>
+  <p>If that FaceTime sucked, send me <a href="/queue">on to the next one</a>.</p>
 <% else %>
   <% content_for :head do %>
     <meta http-equiv="refresh" content="4">
