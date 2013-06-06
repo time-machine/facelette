@@ -14,5 +14,7 @@
 /log/*.log
 /tmp/**/*
 
+db/schema.rb
+db/migrate
 public/assets
 vendor/cache
